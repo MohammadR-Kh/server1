@@ -19,5 +19,8 @@ app.use("/likes", likesRouter);
 
 
 db.sequelize.sync().then(() => {
-    app.listen("https://mohammad111300.github.io/server1/index.js");
+    app.listen(3001, () => {
+        console.log("Server is running on port 3001");
+    
+    });
 });
